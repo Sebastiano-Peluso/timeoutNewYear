@@ -111,6 +111,18 @@
         text-align: center;
         margin-top: 10%;
         font-size: small;
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        color: white;
+        bottom: 0;
+        background-color: #da1e37;
+        padding: 4px;
+        padding-right: 16px;
+        margin-left: -8px;
+        margin-bottom: -8px;
+        border-top: 3px solid yellow;
+
         }
 
 
