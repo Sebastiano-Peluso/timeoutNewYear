@@ -56,16 +56,6 @@
 
 
     {#if Data_Capodanno != "2024-01-01T00:00:00"}
-        <h1>Quanto manca a capodanno ?</h1>
-
-
-        <div class="counter">
-            <Riquadro chiave="gg" numero={gg_intero} />
-            <Riquadro chiave ="hh" numero={hh_intero} />
-            <Riquadro chiave ="mm" numero={mm_intero} />
-            <Riquadro chiave = "ss" numero={ss_intero} />
-        </div>
-    {:else}
     <div class="end_counter">
         <!--<marquee  class="name" align="middle" behavior="scroll" direction="left" scrolldelay="8">
             
@@ -75,6 +65,18 @@
         <h1>BUON ANNO !!!!</h1>
         
     </div>
+
+    {:else}
+    <h1>Quanto manca a capodanno ?</h1>
+
+
+    <div class="counter">
+        <Riquadro chiave="gg" numero={gg_intero} />
+        <Riquadro chiave ="hh" numero={hh_intero} />
+        <Riquadro chiave ="mm" numero={mm_intero} />
+        <Riquadro chiave = "ss" numero={ss_intero} />
+    </div>
+    
     {/if}
 
 </div>
